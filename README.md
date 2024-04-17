@@ -1,2 +1,1 @@
-# kpansampath.github.io
-Kannappan's Homepage
+# Kannappan's Homepage
