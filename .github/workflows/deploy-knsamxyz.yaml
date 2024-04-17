@@ -31,15 +31,13 @@ jobs:
         run: |
           mkdir public
 	  hugo --minify
-
       - name: Upload artifact		
         uses: actions/upload-pages-artifact@v2
         with:
           # As previously mentioned, Hugo dumps the generated page into the `public` directory.
           # The public directory is therefore uploaded as an artefact, which is required for the
           # deployment action, for reasons I'm honestly not entirely clear on (read: I didn't bother checking)
-          path: 'public/'
-	  
+          path: 'public/'	  
       - name: Deploy to GitHub Pages
         # This step deploys the artefact uploaded in the previous step to GH Pages. The artefact
         # should therefore represent the root directory for your page.
