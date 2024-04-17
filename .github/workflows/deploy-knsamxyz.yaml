@@ -29,8 +29,8 @@ jobs:
       - name: Run hugo
         shell: bash
         run: |
-          mkdir public
-	  hugo --minify
+	     mkdir public
+	     hugo --minify
       - name: Upload artifact		
         uses: actions/upload-pages-artifact@v2
         with:
