@@ -1,45 +1,35 @@
+---
 name: Deploy pages
 on:
   push:
-    # This needs to be replaced with the branch you want to deploy from if you use a non-standard name
-    branches: [ main ]
-  workflow_dispatch:
-
+    branches:
+      - main
+  workflow_dispatch: null
 permissions:
   contents: read
   pages: write
   id-token: write
-
 jobs:
   hugo:
     runs-on: ubuntu-latest
     steps:
-      # Required for checking out the repo
       - uses: actions/checkout@v2
         with:
           submodules: true
-      # Required for setting up hugo; if you use a different site generator, this needs to be changed.
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'
+          hugo-version: latest
           extended: true
-      # This step generates the site. By default, hugo dumps it into the `<working directory>/public` directory,
-      # a fact we'll be taking advantage of in a later step.
       - name: Run hugo
         shell: bash
         run: |
-	     mkdir public
-	     hugo --minify
-      - name: Upload artifact		
+          mkdir public
+          hugo --minify
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          # As previously mentioned, Hugo dumps the generated page into the `public` directory.
-          # The public directory is therefore uploaded as an artefact, which is required for the
-          # deployment action, for reasons I'm honestly not entirely clear on (read: I didn't bother checking)
-          path: 'public/'	  
+          path: public/
       - name: Deploy to GitHub Pages
-        # This step deploys the artefact uploaded in the previous step to GH Pages. The artefact
-        # should therefore represent the root directory for your page.
         id: deployment
         uses: actions/deploy-pages@v2
