@@ -8,7 +8,7 @@ name: Deploy Hugo Site to GitHub Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: [$default-branch]
+    branches: [main]
 
   # This line allows us to run this workflow manually from the
   # Actions tab

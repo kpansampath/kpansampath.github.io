@@ -7,7 +7,7 @@ Welcome to my homepage!
 
 I am currently a visiting scientist at [Indian Statistical Institute, Bengaluru](https://www.isibang.ac.in/~statmath/).
 
-I received my PhD from the University of Michigan writing a thesis under the supervision of Prof. Kartik Prasanna. Before that, I studied analytic number theory with Prof. Ram Murty at Queen's University. I enjoyed my undergraduate days at Indian Statistical Institute, Bengaluru.
+I wrote my PhD thesis under the supervision of [Prof. Kartik Prasanna](https://dept.math.lsa.umich.edu/~kartikp/) at the [University of Michigan](https://lsa.umich.edu/math). Before that, I studied analytic number theory with Prof. Ram Murty at Queen's University. I enjoyed my undergraduate days at the Indian Statistical Institute, Bangalore.
 
 My (current) research interests are
 
