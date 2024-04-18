@@ -1,20 +1,22 @@
 /* ---------------
-/  Styling ids
------------------- */
-
-#landing-page {
-    max-width: 580px;
-}
-
-
-/* ---------------
 /  Colors
 ------------------ */
 
 body {
     font-family: 'Alegreya';
-    background-color: #94b1ff /* #938ac8, #facabf */
+    background-color: #d8b4f8
+	/* #94b1ff, #938ac8, #facabf, #d9bdef */
 }
+
+/* ---------------
+/  Styling ids
+------------------ */
+
+#about {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
 
 /* ---------------
 /  Typography
