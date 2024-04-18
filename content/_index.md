@@ -3,7 +3,8 @@ title: Kannappan Sampath
 description: "Visiting Scientist"
 ---
 
-Welcome to my homepage!
+கண்ணப்பன் சம்பத்
+<span style="font-variant:small-caps;">Kannappan Sampath</span>
 
 This is a work-in-progress, as you probably can tell.
 
