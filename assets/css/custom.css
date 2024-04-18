@@ -17,14 +17,14 @@ body {
     margin: 0 auto;
 }
 
-#navbar ul {
+#navbar-main ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     /* display: inline; */
 }
 
-#navbar li {
+#navbar-main li {
     float: right;
 }
 
