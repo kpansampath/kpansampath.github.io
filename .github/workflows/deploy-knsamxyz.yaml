@@ -1,3 +1,8 @@
+#######################################################
+##   This incantation is from
+##         actions/starter-workflows/pages/hugo.yml
+#######################################################
+
 name: Deploy Hugo Site to GitHub Pages
 
 on:
