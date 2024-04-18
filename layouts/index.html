@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{{ $profilepic := resources.Get "img/knsam.jpg" | Process "crop 550x410" }}
 <html lang="en">
   {{ partial "head.html" . }}
   <body>
@@ -11,7 +12,9 @@
       <tbody>
 	<tr>
 	  <td align="LEFT" valign="TOP" width="40%">
-	    <img src="/img/knsam.jpg" alt="ca. 2015, Photo Courtesy: Henry de Valence" width="410.4px" heigh="547.2px" style="padding-right:1cm">
+	    {{- with $profilepic }}
+	    <img src="{{ .RelPermalink }}" alt="ca. 2015, Photo Courtesy: Henry de Valence" width="{{ .Width }}" height="{{ .Height }}" style="padding-right:1cm">
+	    {{- end }}
 	  </td>
 	  <td valign="TOP">
 	    {{ .Content }}
