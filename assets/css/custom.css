@@ -17,6 +17,17 @@ body {
     margin: 0 auto;
 }
 
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* display: inline; */
+}
+
+#navbar li {
+    float: right;
+}
+
 
 /* ---------------
 /  Typography
