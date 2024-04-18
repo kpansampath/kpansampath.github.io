@@ -18,4 +18,4 @@ markup:
         enable: true
 
 params:
-  math: truebaseURL: https://knsam.xyz
+  math: true
