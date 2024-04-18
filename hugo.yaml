@@ -1,3 +1,41 @@
 baseURL: https://knsam.xyz
-languageCode: en-us
-title: Kannappan's Homepage
+languageCode: en
+title: KPan's Homepage
+
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)
+        enable: true
+
+params:
+  math: truebaseURL: https://knsam.xyz
+languageCode: en
+title: KPan's Homepage
+
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+	  - - \[
+	    - \]
+          - - $$
+	    - $$
+	  inline:
+	  - - \(
+	    - \)
+	enable: true
+
+params:
+  math: true
