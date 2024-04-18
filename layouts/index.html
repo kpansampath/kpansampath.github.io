@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{{ $profilepic := resources.Get "img/knsam.jpg" | Process "crop 550x410" }}
+{{ $profilepic := resources.Get "img/knsam.jpg" | .Process "crop 550x410" }}
 <html lang="en">
   {{ partial "head.html" . }}
   <body>
