@@ -1,4 +1,5 @@
 {{ $asset_base := .Site.BaseURL }}
+{{- $css := resources.Get "css/custom.css" | fingerprint -}}
 
 <head>
 
@@ -6,8 +7,9 @@
 
 
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ $asset_base }}assets/css/custom.css" />
-
+  {{- with $css }} 
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" type ="text/css">
+  {{- end }}
   <!-- Fonts -->
 
   <!-- Font: Alegreya by Herta Tipográfica --> 
