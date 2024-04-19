@@ -21,6 +21,14 @@ body {
     text-align: center;
 }
 
+#navbar-main {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 #navbar-main ul {
     list-style-type: none;
     display: block;
@@ -29,11 +37,6 @@ body {
 }
 
 #navbar-main li {
-    float: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     padding: 8px;
 }
 
