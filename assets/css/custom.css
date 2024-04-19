@@ -17,6 +17,10 @@ body {
     margin: 0 auto;
 }
 
+#about h1 {
+    text-align: center;
+}
+
 #navbar-main ul {
     list-style-type: none;
     display: block;
