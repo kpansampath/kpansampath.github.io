@@ -37,6 +37,7 @@ body {
 }
 
 #navbar-main li {
+    display: inline;
     padding: 8px;
 }
 
