@@ -1,6 +1,6 @@
 {{ $asset_base := .Site.BaseURL }}
 {{- $css := resources.Get "css/custom.css" | fingerprint -}}
-
+{{- $tufte := resources.Get "css/tufte.css" | fingerprint -}}
 <head>
 
   <title>{{ .Title }}</title>
@@ -8,8 +8,11 @@
 
   <!-- CSS -->
   {{- with $css }} 
-  <link rel="stylesheet" href="{{ $css.RelPermalink }}" type ="text/css">
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
   {{- end }}
+  {{- with $tufte }}
+  <link rel="stylesheet" href="{{ $tufte.RelPermalink }}" type="text/css">
+  {{- end}} 
   <!-- Fonts -->
 
   <!-- Font: Alegreya by Herta Tipográfica --> 
