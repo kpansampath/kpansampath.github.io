@@ -1,14 +1,19 @@
+{{- with site.Params.profileMode }}
+
+{{- with .navButtons }} 
 <div id="navbar-main">
-  <hr> 
+  <hr>
   <nav>
-    <ul>
-      <li>Research</li>
-      <li>Talks</li>
-      <li>Seminars</li>
-      <li>Teaching</li>
-      <li>Notes</li>
-      <li>Misc</li>
-    </ul>
+    {{- range . }}
+    <a class="button" href="{{ trim .url " " }}" rel="noopener"
+       title="{{ .name }}">
+      <span class="button-inner">
+	{{ .name }}
+      </span>
+    </a>
+    {{- end }}
   </nav>
   <hr>
 </div>
+{{- end }}
+{{- end }} 
