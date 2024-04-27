@@ -2,7 +2,8 @@ body {
     counter-reset: sidenote-counter;
 }
 
-.sidenote, .marginnote {
+.sidenote,
+.marginnote {
     float: right;
     clear: right;
     margin-right: -45%;
@@ -51,4 +52,38 @@ label.margin-toggle:not(.sidenote-number) {
   content: counter(sidenote-counter) " ";
   font-size: 0.8rem;
   top: -0.25rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .sidenote, .marginnote {
+    display: none;
+  }
+
+  label.sidenote-number {
+    display: inline;
+    color: #b24;
+  }
+
+
+  label.margin-toggle:not(.sidenote-number) {
+    display: inline;
+    color: #b24;
+    font-style: normal;
+  }
+
+  .margin-toggle:checked+.sidenote,
+  .margin-toggle:checked+.marginnote {
+    display: block;
+    float: left;
+    left: 2.5%;
+    clear: both;
+    width: 87.5%;
+    margin: 1rem 5%;
+    vertical-align: baseline;
+    position: relative;
+  }
+
+  label {
+    cursor: pointer;
+  }
 }
