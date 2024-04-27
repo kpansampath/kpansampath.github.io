@@ -1,4 +1,12 @@
-@import url("theme-vars.css");
+/* ---------------
+/ Theme variables
+------------------ */
+
+:root {
+    --radius: 8px;
+    --buttonbg: #94b1ff;
+}
+
 
 /* ---------------
 /  Colors
@@ -16,7 +24,7 @@ body {
 ----------------- */
 
 .button {
-    background: var(--tertiary);
+    background: var(--buttonbg);
     border: 1px solid #CFCFCF;
     border-radius: var(--radius);
     margin: 8px 16px 8px 0px;
