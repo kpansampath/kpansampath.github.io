@@ -2,6 +2,37 @@ baseURL: https://knsam.xyz
 languageCode: en
 title: KPan's Homepage
 
+
+## The values under params will populate
+## .Site.Params variable for later use.
+
+params:
+  math: true
+  profileMode:
+    enabled: true
+    title: Kannappan Sampath
+    subtitle: "Visiting Scientist at the Indian Statistical Institute, Bengaluru."
+    imageURL: "img/knsam.jpg"
+    imageWidth:
+    imageHeight:
+    imageTitle:
+    navButtons:
+      - name: Research
+        url: research/
+      - name: Talks
+        url: talks/
+      - name: Seminars
+        url: seminars/
+      - name: Teaching
+        url: teaching/
+      - name: Notes
+        url: notes/
+      - name: Misc
+        url: misc/
+
+
+## Math Jax ##
+
 markup:
   goldmark:
     extensions:
@@ -16,6 +47,3 @@ markup:
           - - \(
             - \)
         enable: true
-
-params:
-  math: true
