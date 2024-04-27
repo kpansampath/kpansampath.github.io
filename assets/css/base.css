@@ -8,6 +8,25 @@ body {
 	/* #94b1ff, #938ac8, #facabf, #d9bdef */
 }
 
+
+/* --------------
+/  Buttons
+----------------- */
+
+.button {
+    background: var(--tertiary);
+    border: 1px solid #CFCFCF;
+    border-radius: var(--radius);
+    margin: 8px 16px 8px 0px;
+    padding: 6px;
+    transition: transform 0.1s;
+    
+}
+
+.button:hover {
+    background: var(--midpurple);
+}
+
 /* ---------------
 /  Styling ids
 ------------------ */
@@ -27,16 +46,7 @@ body {
     text-align: center;
 }
 
-#navbar-main ul {
-    list-style-type: none;
-    display: block;
-    margin: 0;
-}
 
-#navbar-main li {
-    display: inline;
-    padding: 8px;
-}
 
 
 /* ---------------
