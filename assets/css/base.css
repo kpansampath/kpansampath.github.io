@@ -4,7 +4,6 @@
 
 :root {
     --radius: 8px;
-    --buttonbg: #94b1ff;
 }
 
 
@@ -24,9 +23,8 @@ body {
 ----------------- */
 
 .button {
-    background: var(--buttonbg);
-    border: 1px solid #CFCFCF;
-    border-radius: var(--radius);
+   /* border: 1px solid #CFCFCF;
+    border-radius: var(--radius); */
     margin: 8px 16px 8px 0px;
     padding: 6px;
     transition: transform 0.1s;
