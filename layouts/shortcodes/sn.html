@@ -1,4 +1,9 @@
-{{ $uid := now.UnixNano }}
-<label for="sn-{{ $uid }}" class="margin-toggle sidenote-number"></label>
-<input type="checkbox" id="sn-{{ $uid }}" class="margin-toggle"/>
-<span class="sidenote">{{ .Inner }}</span>
+<span class="sidenote">
+  <label for="sn-{{ .Get 1 }}" class="sidenote-label">{{ .Get 2 }}
+  </label>
+  <input type="checkbox" id="sn-{{ .Get 1  }}" class="margin-toggle"/>
+  </input>
+  <span class="sidenote-content sidenote-{{ .Get 0 }}">
+    {{ .Inner }}
+  </span>
+</span>
